@@ -10,7 +10,6 @@ export default function Home() {
     <Provider store={store}>
       <section className="min-h-screen flex flex-col gap-10 size-full my-auto cursor-default">
         <Hero />
-
         <div className=" wrapper flex flex-col gap-4">
           <p className="text-xl md:text-3xl text-primary/65">
             Enhance your reading experience with{" "}

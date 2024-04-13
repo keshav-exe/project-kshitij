@@ -1,9 +1,9 @@
 import React from "react";
 
-const Loading = () => {
+export default function Loading() {
   return (
-    <div>
-      <div class="loading">
+    <div className="h-100vh w-100% flex flex-center my-[50vh] justify-center align-middle">
+      <div className="loading">
         <svg height="48px" width="64px">
           <polyline
             id="back"
@@ -17,6 +17,4 @@ const Loading = () => {
       </div>
     </div>
   );
-};
-
-export default Loading;
+}

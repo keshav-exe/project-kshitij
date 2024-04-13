@@ -2,7 +2,7 @@
 import React, { useState, useEffect, Suspense } from "react";
 import { useLazyGetSummaryQuery } from "@/utils/services/article";
 import Link from "next/link";
-import Loading from "./Loading";
+import Loading from "../../app/loading";
 import { motion } from "framer-motion";
 
 const Search = () => {
@@ -83,7 +83,7 @@ const Search = () => {
                 viewBox="0 0 24 24"
                 strokeWidth="1.5"
                 stroke="currentColor"
-                class="w-12 h-12 text-primary md:hidden"
+                className="w-12 h-12 text-primary md:hidden"
               >
                 <path
                   strokeLinecap="round"

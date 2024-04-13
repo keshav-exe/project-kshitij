@@ -1,9 +1,10 @@
 "use client";
-import React from "react";
+import React, { Suspense } from "react";
 import styles from "../../app/page.module.css";
 import gsap from "gsap";
 import { useEffect, useRef } from "react";
 import { ScrollTrigger } from "gsap/all";
+import Loading from "@/app/loading";
 
 const Hero = () => {
   const firstText = useRef(null);
@@ -16,24 +17,6 @@ const Hero = () => {
   let direction = -1;
 
   useEffect(() => {
-    gsap.registerPlugin(ScrollTrigger);
-
-    gsap.to(slider.current, {
-      scrollTrigger: {
-        trigger: document.documentElement,
-
-        scrub: 0.5,
-
-        start: 0,
-
-        end: window.innerHeight,
-
-        onUpdate: (e) => (direction = e.direction * -1),
-      },
-
-      x: "-500px",
-    });
-
     requestAnimationFrame(animate);
   }, []);
 

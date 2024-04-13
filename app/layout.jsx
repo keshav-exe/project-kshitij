@@ -1,6 +1,8 @@
 import { Manrope } from "next/font/google";
 import "./globals.css";
 import Footer from "@/components/shared/Footer";
+import { Suspense } from "react";
+import Loading from "./loading";
 
 const manrope = Manrope({ subsets: ["latin"] });
 
@@ -14,9 +16,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${manrope.className} bg-background`}>
-        {children}
-
-        <Footer />
+        <Suspense fallback={<Loading />}>
+          {children}
+          <Footer />
+        </Suspense>
       </body>
     </html>
   );
