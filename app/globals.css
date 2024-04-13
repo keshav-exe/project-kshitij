@@ -94,12 +94,13 @@ body {
   display: flex;
   height: 32vh;
   overflow: hidden;
+  z-index: 10;
   justify-content: center;
 }
 
 @media only screen and (max-width: 600px) {
   .main {
-    height: 14vh;
+    height: 16vh;
   }
 }
 

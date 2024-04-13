@@ -12,10 +12,13 @@ export default function Home() {
         <Hero />
 
         <div className=" wrapper flex flex-col gap-4">
-          <p className="text-xl md:text-2xl text-primary/65">
-            Enhance your reading with <span className="underline">Kshitij</span>
-            , an open-source article summarizer that transforms lengthy articles
-            into concise summaries using the powerful GPT-4.
+          <p className="text-xl md:text-3xl text-primary/65">
+            Enhance your reading experience with{" "}
+            <span className="underline">Kshitij</span>, an innovative
+            open-source article summarizer. Seamlessly transforming extensive
+            articles into concise summaries,{" "}
+            <span className="underline">Kshitij</span> leverages the formidable
+            capabilities Open AI's GPT-4.
           </p>
         </div>
         <div className="flex flex-row">

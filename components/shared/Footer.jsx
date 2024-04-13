@@ -16,9 +16,9 @@ const Footer = () => {
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
-            strokewidth="1.5"
+            strokeWidth="1.5"
             stroke="currentColor"
-            class="w-8 h-8"
+            className="w-8 h-8"
           >
             <path
               strokeLinecap="round"
@@ -27,7 +27,7 @@ const Footer = () => {
             />
           </svg>
 
-          <span className="my-auto">My Website</span>
+          <span className="my-auto">Portfolio</span>
         </Link>
         <p className="text-foreground/70 my-auto cursor-default font-medium underline">
           Projkt Kshitij

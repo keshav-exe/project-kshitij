@@ -69,7 +69,7 @@ const Search = () => {
                 viewBox="0 0 24 24"
                 strokeWidth="1.5"
                 stroke="currentColor"
-                class="w-12 h-12 text-primary"
+                className="w-12 h-12 text-primary hidden md:block"
               >
                 <path
                   strokeLinecap="round"
@@ -77,38 +77,40 @@ const Search = () => {
                   d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
                 />
               </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth="1.5"
+                stroke="currentColor"
+                class="w-12 h-12 text-primary md:hidden"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M19.5 13.5 12 21m0 0-7.5-7.5M12 21V3"
+                />
+              </svg>
             </Link>
           </button>
         </form>
         <div className="flex flex-col gap-6 ">
-          {!allArticles ? (
-            <></>
-          ) : (
-            <h2 className="text-4xl flex gap-2 my-auto underline hover:underline-offset-8">
-              History:
-            </h2>
-          )}
-          <Suspense fallback={<Loading />}>
-            {allArticles.map((item, index) => (
-              <motion.div
-                initial={{ y: 20, opacity: 0 }}
-                animate={{ y: 0, opacity: 1 }}
-                transition={{ duration: 1, ease: [0.22, 0.5, 0.36, 1] }}
-              >
-                <div key={`link-${index}`} onClick={() => setArticle(item)}>
-                  <p className="truncate cursor-pointer text-primary/50 hover:text-foreground transition-all duration-300">
-                    {item.url}
-                  </p>
-                </div>
-              </motion.div>
-            ))}
-          </Suspense>
+          {allArticles.map((item, index) => (
+            <motion.div
+              key={`link-${index}`}
+              onClick={() => setArticle(item)}
+              initial={{ y: 20, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ duration: 1, ease: [0.22, 0.5, 0.36, 1] }}
+            >
+              <p className="truncate cursor-pointer text-primary/50 hover:text-foreground transition-all duration-300">
+                {item.url}
+              </p>
+            </motion.div>
+          ))}
         </div>
       </div>
       <div className="w-full flex flex-col gap-5" id="summary">
-        <h2 className="text-4xl underline hover:underline-offset-8">
-          Summary:
-        </h2>
         {isFetching ? (
           <Loading />
         ) : error ? (
@@ -118,13 +120,17 @@ const Search = () => {
           </p>
         ) : (
           article.summary && (
-            <motion.div
+            <motion.p
+              className="text-primary text-xl gap-6 flex flex-col"
               initial={{ y: 20, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ duration: 1, ease: [0.22, 0.5, 0.36, 1] }}
             >
-              <p className="text-primary text-xl">{article.summary}</p>
-            </motion.div>
+              <h2 className="text-4xl underline hover:underline-offset-8 text-foreground">
+                Summary:
+              </h2>
+              {article.summary}
+            </motion.p>
           )
         )}
       </div>

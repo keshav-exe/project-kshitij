@@ -1,36 +1,34 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+### Project-Kshitij
 
-## Getting Started
+Welcome to Project-Kshitij! This is an article summarizer web application powered by OpenAI's Chat GPT 4 API. Say goodbye to long hours of reading articles; let Kshitij do the summarizing for you!
 
-First, run the development server:
+### Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Article Summarization:** Input any article URL, and Kshitij will provide you with a concise summary.
+- **Limitations:** Please note that there is a limit of 50 requests per month due to API restrictions.
+- **Technology Stack:** Developed with Next.js 14.1.4 and Tailwind CSS for a sleek and responsive user interface. Additionally, it utilizes GSAP and Framer Motion for delightful animations and smooth transitions.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Usage
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+Visit [Project-Kshitij](https://project-kshitij.vercel.app/) and follow these simple steps:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+1. Enter the URL of the article you want to summarize in the provided input field.
+2. Click on the "Summarize" button.
+3. Wait for Kshitij to work its magic and provide you with a summarized version of the article.
+4. Enjoy your summarized content!
 
-## Learn More
+### Contributing
 
-To learn more about Next.js, take a look at the following resources:
+Contributions are welcome! If you have any ideas, suggestions, or bug fixes, feel free to open an issue or submit a pull request on the [GitHub repository](https://github.com/your-username/Project-Kshitij).
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Credits
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- **OpenAI:** Providing the powerful Chat GPT 4 API.
+- **RapidAPI - Article Extractor and Summarizer:** Utilized for article extraction and summarization. ([API Link](https://rapidapi.com/restyler/api/article-extractor-and-summarizer/))
+- **Adrian Hajdin - JS Mastery:** Tutorial reference and inspiration for building the project. ([Adrian on Github](https://github.com/adrianhajdin/project_ai_summarizer))
+- **Next.js and Tailwind CSS:** Making development a breeze.
+- **GSAP and Framer Motion:** Adding delightful animations and smooth transitions.
 
-## Deploy on Vercel
+### License
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+This project is licensed under the [MIT License](LICENSE).
