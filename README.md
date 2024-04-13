@@ -1,4 +1,4 @@
-### Project-Kshitij
+# Project-Kshitij
 
 Welcome to Project-Kshitij! This is an article summarizer web application powered by OpenAI's Chat GPT 4 API. Say goodbye to long hours of reading articles; let Kshitij do the summarizing for you!
 
