@@ -4,7 +4,6 @@
 
 @layer base {
   :root {
-<<<<<<< HEAD
     --background: 0 0% 9%;
     --foreground: 13 91% 53%;
 
@@ -28,11 +27,10 @@
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
     --ring: 222.2 84% 4.9%;
-=======
+
     --background: 13 50% 4%;
     --foreground: 13 91% 50%;
     --primary: 13 50% 95%;
->>>>>>> 5b81ae9 (visual refinements)
 
     --radius: 0.5rem;
   }
@@ -48,11 +46,8 @@
 }
 @layer utilities {
   .wrapper {
-<<<<<<< HEAD
     @apply max-w-7xl lg:mx-auto p-5 md:px-10 xl:px-0 w-full;
-=======
     @apply max-w-7xl lg:mx-auto p-5 md:px-10 w-full;
->>>>>>> 5b81ae9 (visual refinements)
   }
 
   .flex-center {
@@ -76,25 +71,18 @@
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-<<<<<<< HEAD
   background: #d5e2e7;
-=======
   background: hsl(13, 27%, 87%);
->>>>>>> 5b81ae9 (visual refinements)
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-<<<<<<< HEAD
   background: #9dc9db;
-=======
   background: hsl(13, 46%, 74%);
->>>>>>> 5b81ae9 (visual refinements)
 }
 
 ::-moz-selection {
   /* Code for Firefox */
-<<<<<<< HEAD
   color: #18212a;
   background: #f5f9ff;
 }
@@ -102,7 +90,6 @@
 ::selection {
   color: #18212a;
   background: #f5f9ff;
-=======
   color: hsl(13, 27%, 13%);
   background: hsl(13, 100%, 98%);
 }
@@ -110,7 +97,6 @@
 ::selection {
   color: hsl(13, 27%, 13%);
   background: hsl(13, 100%, 98%);
->>>>>>> 5b81ae9 (visual refinements)
 }
 
 body {
@@ -120,27 +106,21 @@ body {
 .main {
   position: relative;
   display: flex;
-<<<<<<< HEAD
   height: 32vh;
   overflow: hidden;
   z-index: 10;
   justify-content: center;
-=======
   height: 18vh;
   overflow: hidden;
   z-index: 10;
   justify-content: center;
   width: 100%;
->>>>>>> 5b81ae9 (visual refinements)
 }
 
 @media only screen and (max-width: 600px) {
   .main {
-<<<<<<< HEAD
     height: 16vh;
-=======
     height: 14vh;
->>>>>>> 5b81ae9 (visual refinements)
   }
 }
 
@@ -153,20 +133,19 @@ body {
 
 .loading svg polyline#back {
   fill: none;
-<<<<<<< HEAD
+
   stroke: #e0464b33;
-=======
+
   stroke: hsla(13, 71%, 58%, 0.2);
->>>>>>> 5b81ae9 (visual refinements)
 }
 
 .loading svg polyline#front {
   fill: none;
-<<<<<<< HEAD
+
   stroke: #d2494b;
-=======
+
   stroke: hsl(13, 100%, 50%);
->>>>>>> 5b81ae9 (visual refinements)
+
   stroke-dasharray: 48, 144;
   stroke-dashoffset: 192;
   animation: dash_682 1.4s linear infinite;
