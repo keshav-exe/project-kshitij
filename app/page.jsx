@@ -11,17 +11,12 @@ export default function Home() {
       <section className="flex flex-col size-full my-auto cursor-default">
         <Hero />
         <div className=" wrapper flex flex-col">
-          <p className="text-lg md:text-2xl text-primary/80">
+          <p className="text-xl md:text-3xl text-primary/80">
             Enhance your reading experience with{" "}
             <span className="underline text-foreground/80 hover:underline-offset-4">
               Kshitij
             </span>
-            , an innovative open-source article summarizer. Seamlessly
-            transforming extensive articles into concise summaries,{" "}
-            <span className="underline text-foreground/80 hover:underline-offset-4">
-              Kshitij
-            </span>{" "}
-            leverages the formidable capabilities of Open AI's GPT-4.
+            , an innovative open-source article summarizer.
           </p>
         </div>
         <div className="flex flex-row my-auto">

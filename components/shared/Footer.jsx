@@ -31,7 +31,7 @@ const Footer = () => {
         </Link>
         <Link
           href="/"
-          className="text-foreground my-auto font-medium underline"
+          className="text-foreground my-auto font-medium underline hover:underline-offset-4"
         >
           Projkt Kshitij
         </Link>

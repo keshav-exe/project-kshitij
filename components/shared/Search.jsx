@@ -118,7 +118,7 @@ const Search = () => {
           <Loading />
         ) : error ? (
           <p>
-            Fuck, We Ran Into An Error! <br />
+            Oops, We Ran Into An Error! <br />
             <span>Reason: {error?.data?.error}</span>
           </p>
         ) : (
