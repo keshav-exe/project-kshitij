@@ -1,5 +1,7 @@
 # Project-Kshitij
 
+![Kshitij Logo](https://utfs.io/f/2c854f9f-78a4-46d3-9113-ae0d530ef689-5nw9l7.png)
+
 Welcome to Project-Kshitij! This is an article summarizer web application powered by OpenAI's Chat GPT 4 API. Say goodbye to long hours of reading articles; let Kshitij do the summarizing for you!
 
 ### Features
