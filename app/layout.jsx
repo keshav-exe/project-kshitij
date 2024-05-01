@@ -31,7 +31,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${spaceMono.className} bg-background`}>
+      <body
+        className={`${spaceMono.className} bg-background justify-evenly min-h-screen flex flex-col`}
+      >
         <Suspense fallback={<Loading />}>
           {children}
           <Footer />
